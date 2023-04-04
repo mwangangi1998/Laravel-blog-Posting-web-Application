@@ -24,3 +24,6 @@ Route::get('/services',[PagesController::class,'services']);
 // Route::resource('posts','postsController');
 Route::get('/posts',[postsController::class,'index']);
 Route::get('post/{id}',[postsController::class,'show']);
+
+Route::get('create',[postsController::class,'create']);
+Route::post('store/',[postsController::class,'store']);
