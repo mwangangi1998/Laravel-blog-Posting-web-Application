@@ -13,7 +13,7 @@ class postsController extends Controller
     {
 
         $posts = Post::all();
-        $posts = Post::Latest()->paginate(8);
+        $posts = Post::Latest()->paginate(6);
         return view('posts.index')->with('posts', $posts);
         # code...
     }
