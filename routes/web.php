@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\postsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 /*
@@ -20,3 +21,6 @@ Route::get('/', function () {
 
 Route::get('/about',[PagesController::class,'about']);
 Route::get('/services',[PagesController::class,'services']);
+// Route::resource('posts','postsController');
+Route::get('/posts',[postsController::class,'index']);
+Route::get('post/{id}',[postsController::class,'show']);

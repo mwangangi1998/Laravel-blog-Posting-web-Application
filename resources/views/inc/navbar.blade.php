@@ -9,7 +9,7 @@
           <a class="nav-link " aria-current="page" href="{{ url('/') }}">Home</a>
           <a class="nav-link" href="{{ url('about') }}">About</a>
           <a class="nav-link" href="{{ url('services') }}">services</a>
-          {{-- <a class="nav-link disabled">Disabled</a> --}}
+          <a class="nav-link " href="{{ url('posts') }}">Blog</a>
         </div>
       </div>
     </div>
