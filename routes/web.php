@@ -27,3 +27,9 @@ Route::get('post/{id}',[postsController::class,'show']);
 
 Route::get('create',[postsController::class,'create']);
 Route::post('store/',[postsController::class,'store']);
+
+// edit post
+Route::get('edit/{id}',[postsController::class,'edit']);
+Route::post('edit/{id}',[postsController::class,'update']);
+
+

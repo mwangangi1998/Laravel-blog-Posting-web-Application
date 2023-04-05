@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
-// use DB;
+use DB;
 class postsController extends Controller
 {
     //
@@ -44,4 +44,18 @@ $post->save();
 return redirect('/posts')->with('success','post created');
     }
 
+
+    public function edit($id)
+    {
+        $post=POst::find($id);
+        return view('posts.edit',compact('post'));
+
+    }
+//edit post
+public function update($id)
+{
+    $post=POst::find($id);
+
+
+}
 }
