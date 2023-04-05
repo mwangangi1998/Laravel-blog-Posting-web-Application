@@ -12,7 +12,7 @@
                 <li class="list-group-item">
                     <a href="{{url( '/post/'.$post->id )}}"><h3> {{ $post->title }}</h3></a>
                     <small>published on: {{ $post->created_at }}</small>
-
+ <a href="{{ url('/delete/'.$post->id) }}" class="btn btn-danger ">delete</a>
                 </li>
 
 

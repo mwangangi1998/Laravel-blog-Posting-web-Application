@@ -3,11 +3,12 @@
 
 <div class="container-fluid">
 <h3 class="text text-center b-400">Edit post</h3>
-<form style="padding:2% 5% 0% 5%; align:center;" action="{{ url('/store') }}" method="post">
+<form style="padding:2% 5% 0% 5%; align:center;" action="{{ url('/update/') }}" method="post">
     @csrf
+    <input type="hidden" name="id" value="{{ $post->id }}">
     <div class="form-group "  style="padding: 3% 0% 0% 0%;">
       <label >Edit post title</label>
-      <input type="text" class="form-control" name="title"  value="{{ $post->title }}">
+      <input type="text" class="form-control" name="title" id="title"  value="{{ $post->title }}">
     </div>
     <div class="form-group "  style="padding: 3% 0% 0% 0%;">
         <label >Edit post body</label>

@@ -30,6 +30,12 @@ Route::post('store/',[postsController::class,'store']);
 
 // edit post
 Route::get('edit/{id}',[postsController::class,'edit']);
-Route::post('edit/{id}',[postsController::class,'update']);
+Route::post('update/',[postsController::class,'update']);
 
 
+// deleting post
+Route::get('delete/{id}',[postsController::class,'destroy']);
+
+Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
