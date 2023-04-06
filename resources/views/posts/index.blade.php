@@ -1,31 +1,40 @@
 @extends('layouts.app')
 @section('content')
 
-  <div class="container">
-    <h1>Posts</h1>
+    <div class="container">
+        <h1>Posts</h1>
 
 
-    @if (count($posts) > 0)
-        @foreach ($posts as $post)
-            <div class="card-body " style="width:70%;padding-top:3px;">
-            <ul class="list-group ">
-                <li class="list-group-item">
-                    <a href="{{url( '/post/'.$post->id )}}"><h3> {{ $post->title }}</h3></a>
-                    <small>published on: {{ $post->created_at }}</small>
- <a href="{{ url('/delete/'.$post->id) }}" class="btn btn-danger ">delete</a>
-                </li>
+        @if (count($posts) > 0)
+            @foreach ($posts as $post)
+                <div class="card-body " style="width:70%;padding-top:3px;">
+                    <ul class="list-group ">
 
 
-            </ul>
+                        <li class="list-group-item">
+                            {{-- <img style="width:100%;" src="/storage/cover_images/{{ $post->cover_image }}" alt=""> --}}
+                            <a href="{{ url('/post/' . $post->id) }}">
+                                <h3> {{ $post->title }}</h3>
+                            </a>
+                            <small>published on: {{ $post->created_at }} by {{ $post->user->name }}</small>
+                            @if (!Auth::guest())
+                            @if (Auth::user()->id == $post->user_id)
+                            <a href="{{ url('/delete/' . $post->id) }}" class="btn btn-danger " style="margin-left:25%">delete</a>
+                            @endif
+                            @endif
+                        </li>
 
-        </div>
-        @endforeach
-        <div>
-            {{ $posts->links()}}
-        </div>
-    @else
-        <p class="text text-center">No posts available</p>
-    @endif
 
-</div>
+                    </ul>
+
+                </div>
+            @endforeach
+            <div>
+                {{ $posts->links() }}
+            </div>
+        @else
+            <p class="text text-center">No posts available</p>
+        @endif
+
+    </div>
 @endsection

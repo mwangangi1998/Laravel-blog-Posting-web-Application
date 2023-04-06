@@ -10,6 +10,12 @@ class Post extends Model
     use HasFactory;
     public $fillable=[
     'title',
-    'body'
+    'body',
+    'cover_image'
     ];
+
+    public  function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
