@@ -14,6 +14,10 @@
         <label >Edit post body</label>
         <textarea class="form-control ckeditor"  name="body" rows="3"  id="body"> {{ $post->body }}</textarea>
       </div>
+      <div class="form-group "  ><br>
+        <label >upload cover image</label>
+        <input type="file"  name="cover_image"/>
+      </div>
 <div class="form-group" style="padding: 3% 0% 0% 0%;">
 <button class="btn btn-primary btn-lg btn-block">submit</button>
 </div>
