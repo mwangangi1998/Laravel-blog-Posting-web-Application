@@ -14,10 +14,8 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', function () {
-    $heading="Welcome to blogging";
-    return view('index',compact('heading'));
-});
+Route::get('/',[PagesController::class,'home']);
+
 
 Route::get('/about',[PagesController::class,'about']);
 Route::get('/services',[PagesController::class,'services']);
