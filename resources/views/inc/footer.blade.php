@@ -2,25 +2,14 @@
     <div class="container py-3">
         <div class="row">
             <div class="col-md-6">
-                <h3>Contact Us</h3>
-                <p>Your street name<br>
-                    City, State ZIP<br>
-                    Phone: (254)000-0000<br>
-                    Email: codingwithvinnie@gmail.com</p>
+                <h3>Subscribe to Newsletter</h3>
+                <p></p>
             </div>
             <div class="col-md-6">
-                <h3>Subscribe to Newsletter</h3>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-8">
-                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Email address">
-                        </div>
-                        <div class="form-group col-md-4" style="padding-top:4px;">
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <form action="" method="post">
+                <input type="text" name="" id=""><button>subscribe</button>
+            </form>
+                       </div>
         </div>
     </div>
 </footer>
@@ -29,12 +18,15 @@
         /* overflow: visible; */
         position: fixed;
         bottom: 0;
+   /* height: 70px; */
         left: 0;
         width: 100%;
     }
     @media screen and (max-width: 768px) {
   footer {
-    position: relative;
+    /* Styles for footer when screen width is 768px or less */
+    position: relative; /* Change position property to flex */
+    /* other styles */
   }
 }
 

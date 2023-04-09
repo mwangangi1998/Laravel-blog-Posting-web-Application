@@ -7,12 +7,12 @@
 
         @if (count($posts) > 0)
             @foreach ($posts as $post)
-            <div class="card">
-             <div class="row">
-                <div class="col-sm">
-                    <img src="{{ url('/cover_image/'.$post->cover_image) }}" alt="image" style="width:50%;">
+            <div class="card" >
+             <div class="row" >
+                <div class="col-sm" >
+                    <img src="{{ url('/cover_image/'.$post->cover_image) }}" alt="image" style="width:30%; ">
                 </div>
-                <div class="col">
+                <div class="col" >
                     <a href="{{ url('/post/'. $post->id) }}">
                         <h3 class="p-4"> {{ $post->title }}</h3>
                     </a>
