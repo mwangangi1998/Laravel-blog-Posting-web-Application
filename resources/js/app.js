@@ -1,5 +1,6 @@
 import './bootstrap';
 import '../sass/app.scss'
+import { write } from '@popperjs/core';
 
 // tinymce.init({
 //     selector:'textarea.body',
@@ -9,3 +10,5 @@ import '../sass/app.scss'
 $(document).ready(function () {
     $('.ckeditor').ckeditor();
 });
+
+
