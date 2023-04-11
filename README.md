@@ -1,6 +1,6 @@
 ## Blogging Application developed using Laravel 9 
 <p> VtechBlogs is a web Application that is developed using laravel 9 ,Mysql database <br/>
-
+<p>This web Application is responsive in all devices </p>
 
 #Features 
 - user can create account for posting blogs posts
