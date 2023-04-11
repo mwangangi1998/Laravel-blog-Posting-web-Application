@@ -20,7 +20,7 @@
 <li>Bootstrap 5 for frontent development</li>
 <li>Vite </li>
 <li>JS </li>
-<li>Ckeditor</li>
+
 </ul>
 
 </p>
