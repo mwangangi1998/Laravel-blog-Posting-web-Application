@@ -25,3 +25,14 @@
 
 </p>
 
+<img src="resources/blog_image/`create blog page.PNG" style="width:100%"/>
+
+<img src="resources/blog_image/`create blog page.PNG" style="width:100%"/>
+<img src="resources/blog_image/about page.PNG" style="width:100%"/>
+<img src="resources/blog_image/blog page.PNG" style="width:100%"/>
+<img src="resources/blog_image/dashboard.PNG" style="width:100%"/>
+<img src="resources/blog_image/edit blog page.PNG" style="width:100%"/>
+<img src="resources/blog_image/landing page.PNG" style="width:100%"/>
+<img src="resources/blog_image/login page.PNG style="width:100%"/>
+<img src="resources/blog_image/show case of blog post.PNG" style="width:100%"/>
+<img src="resources/blog_image/show case of blog post part 2.PNG" style="width:100%"/>
