@@ -2,7 +2,7 @@
 <p> VtechBlogs is a web Application that is developed using laravel 9 ,Mysql database <br/>
 <p>This web Application is responsive in all devices </p>
 
-#Features 
+Features 
 - user can create account for posting blogs posts
 - the user will only be able to edit or delete posts that he/she has created.
 -All posts are visible to all user(editors) dashboards .
