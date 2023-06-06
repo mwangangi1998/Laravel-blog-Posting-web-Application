@@ -1,8 +1,8 @@
 ## Blogging Application developed using Laravel 9 
 <p> VtechBlogs is a web Application that is developed using laravel 9 ,Mysql database <br/>
+<p>This web Application is responsive in all devices </p>
 
-
-#Features 
+Features 
 - user can create account for posting blogs posts
 - the user will only be able to edit or delete posts that he/she has created.
 -All posts are visible to all user(editors) dashboards .
@@ -20,8 +20,19 @@
 <li>Bootstrap 5 for frontent development</li>
 <li>Vite </li>
 <li>JS </li>
-<li>Ckeditor</li>
+
 </ul>
 
 </p>
 
+<img src="resources/blog_image/`create blog page.PNG" style="width:100%"/>
+
+<img src="resources/blog_image/`create blog page.PNG" style="width:100%"/>
+<img src="resources/blog_image/about page.PNG" style="width:100%"/>
+<img src="resources/blog_image/blog page.PNG" style="width:100%"/>
+<img src="resources/blog_image/dashboard.PNG" style="width:100%"/>
+<img src="resources/blog_image/edit blog page.PNG" style="width:100%"/>
+<img src="resources/blog_image/landing page.PNG" style="width:100%"/>
+<img src="resources/blog_image/login page.PNG style="width:100%"/>
+<img src="resources/blog_image/show case of blog post.PNG" style="width:100%"/>
+<img src="resources/blog_image/show case of blog post part 2.PNG" style="width:100%"/>
